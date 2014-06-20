@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
 
 header{
-    background-image: url(rhcp.jpg);
+    background-image: url(wigglesbeach.jpg);
     background-size: contain;
     border: 5px double red;
     padding: 15px;
     color: red;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 60px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 1px 1px 1px 1px green;
 }
