@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+header{
+    background-image: url(rhcp.jpg);
+    background-size: contain;
+    border: 5px double red;
+    padding: 15px;
+    color: red;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 60px;
+}
