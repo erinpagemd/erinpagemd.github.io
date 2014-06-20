@@ -8,4 +8,6 @@ header{
     color: red;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px green;
 }
