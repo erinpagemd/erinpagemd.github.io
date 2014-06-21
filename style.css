@@ -1,15 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
 
-header{
+body{
     background-image: url(wigglesbeach.jpg);
-    background-size: contain;
-    border: 5px double red;
+    background-size: cover;
+}
+
+header{
     padding: 15px;
     color: red;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 60px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px 1px green;
 }
 
 footer{
