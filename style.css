@@ -11,3 +11,13 @@ header{
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px green;
 }
+
+footer{
+    border: 5px double red;
+    padding: 15px;
+    color: red;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 60px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px green;
+}
