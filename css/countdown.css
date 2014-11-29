@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+@import url(http://fonts.googleapis.com/css?family=Playball);
 
 body{
-    background-image: url(wigglesbeach.jpg);
+    background-image: url(../images/donna.jpg);
     background-size: cover;
 }
 
@@ -15,9 +15,12 @@ header{
 footer{
     border: 5px double red;
     padding: 15px;
-    color: red;
-    font-family: 'Just Me Again Down Here', cursive;
-    font-size: 60px;
+    color: white;
+    font-family: 'Playball', cursive;
+    font-size: 30px;
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px green;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
