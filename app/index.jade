@@ -15,13 +15,41 @@ html
       .jumbotron
         h1 Erin M Page
         h2 Javascript Engineer
+        h3 Nashville, Tennessee
         
-    #pic-div.row
-      p Some image of me here
-      p github icon
-      p linkedin icon
-      p technology icons
-      
+    #selfie-div.row
+      .row
+        .col-sm-6
+        .col-sm-6.selfie-right
+          .technology-icons
+            h1 Technologies I love
+            .logo
+              img(src='assets/angular-logo.png' alt='AngularJS') 
+            .logo
+              img(src='assets/firebase-logo.png' alt='Firebase') 
+            .logo
+              img(src='assets/gulp-logo.png' alt='Gulp')
+            .logo
+              img(src='assets/jade-logo.png' alt='Jade')
+            .logo
+              img(src='assets/bootstrap-logo.png' alt='Bootstrap')
+            .logo
+              img(src='assets/sass-logo.png' alt='Sass')
+            .logo
+              img(src='assets/atom-logo.png' alt='Atom')
+            .logo
+              img(src='assets/afire-logo.png' alt='AngularFire') 
+            .logo
+              img(src='' alt='jQuery')
+          .social-media-icons
+            h1 Where to find me
+            .logo
+              img(src='assets/github-logo.png' alt='Github')
+            .logo
+              img(src='' alt='LinkedIn')
+            .logo
+              img(src='' alt='Twitter')
+    
     #carousel-div.carousel.slide(data-ride='carousel')
       ol.carousel-indicators
         li(data-target='ex1' data-slide-to='0' class='active')
