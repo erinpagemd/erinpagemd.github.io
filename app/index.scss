@@ -3,6 +3,7 @@
 /////////////// volunteer div ////////////////
 
 #community-div {
+  padding-top: 70px;
   background-color: white;
   text-align: center;
   padding: 5% 1%;
@@ -22,10 +23,16 @@
 /////////////// carousel div ////////////////
 
 #carousel-div {
+  padding-top: 80px;
+  height: 100%;
+  margin: 3% 1%;
+
   img {
     background-size: cover;
     text-align: center;
     width: 100%;
+    height: 100%;
+    padding: 3% 2%;
   }
 }
 
@@ -36,7 +43,6 @@
   background-image: url("assets/desk.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 50px;
   text-align: center;
   position: relative;
 
@@ -62,11 +68,12 @@
 /////////////// pic div ////////////////////
 
 #selfie-div {
+  padding-top: 80px;
+  margin: 3% 0;
   height: 100%;
   background-image: url("assets/mesf.jpg");
   background-position: center;
   background-size: cover;
-  padding-top: 50px;
   text-align: center;
   position: relative;
   color: white;
@@ -119,4 +126,5 @@
 
 body {
   padding-top: 70px;
+  background-color: #edefed;
 }
