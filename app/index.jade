@@ -55,7 +55,26 @@ html
             p description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Foundation for minimal styling. First crack at logins and user flows. Light test suite with mocha and chai.
 
     #form-div.row
-      p contact form
+      form.form-horizontal
+        h1 Contact Form
+        .form-group
+          label.col-sm-2.control-label Name
+          .col-sm-10
+            input.form-control(placeholder='bob smith' type='text')
+        .form-group
+          label.col-sm-2.control-label Email
+          .col-sm-10
+            input.form-control(placeholder='bob@aol.com' type='email')
+        .form-group
+          label.col-sm-2.control-label Phone
+          .col-sm-10
+            input.form-control(placeholder='867-5309')
+        .form-group
+          label.col-sm-2.control-label Message
+          .col-sm-10
+            textarea.form-control(placeholder='send me some awesomeness')
+        button.btn.btn-large.btn-info Submit
+    
     #footer.row
       .navbar.navbar-inverse
         .container
