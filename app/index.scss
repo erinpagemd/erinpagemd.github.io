@@ -1,5 +1,15 @@
 @import '../public/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
+/////////////// carousel div ////////////////
+
+#carousel-div {
+  img {
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 /////////////// form div ////////////////////
 
 #form-div {
