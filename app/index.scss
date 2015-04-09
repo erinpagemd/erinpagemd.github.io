@@ -1,5 +1,24 @@
 @import '../public/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
+/////////////// volunteer div ////////////////
+
+#community-div {
+  background-color: white;
+  text-align: center;
+  padding: 5% 1%;
+
+  .volunteer {
+  }
+
+  .groups {
+    background-color: gray;
+    color: white;
+  }
+
+  .hacks {
+  }
+}
+
 /////////////// carousel div ////////////////
 
 #carousel-div {
