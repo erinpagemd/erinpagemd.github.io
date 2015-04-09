@@ -9,9 +9,64 @@ html
     link(rel='shortcut icon' type='image/x-icon' href='assets/Trophy-gold.ico')
     title Erin M Page
   body
-    
+    include ./views/nav
 
+    #title-div.row
+      .jumbotron
+        h1 Erin M Page
+        h2 Javascript Engineer
+        
+    #pic-div.row
+      p Some image of me here
+      p github icon
+      p linkedin icon
+      p technology icons
       
+    #carousel-div.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li(data-target='ex1' data-slide-to='0' class='active')
+        li(data-target='ex1' data-slide-to='1')
+        li(data-target='ex1' data-slide-to='2')
+      
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='assets/chismosas.png' alt='Chismosas Chat App')
+          .carousel-caption
+            h1 Chismosas
+            p website: http://erinpagemd.github.io/chismosas
+            p repo: https://github.com/erinpagemd/chismosas
+            p stack: javascript, jquery, firebase, json, html, css, bootstrap
+            p description: Messaging app with Firebase live reload. Bootstrap for minimal styling.
+        .item
+          img(src='assets/nerdTree.png' alt='Nerdtree Dating App')
+          .carousel-caption
+            h1 NerdTree
+            p website: http://erinpagemd.github.io/nerd-tree
+            p repo: https://github.com/erinpagemd/nerd-tree
+            p stack: javascript, lodash, jquery, firebase, json, html, css, bootstrap
+            p description: Basic CRUD app with login. Firebase login, create new account, and logout. Using Firebase requests used for retrieving, posting, deleting, and modifying data. Bootstrap for minimal styling.
+        .item
+          img(src='assets/littleBlackBook.png' alt='LittleBlackBook Address Book App')
+          .carousel-caption
+            h1 LittleBlackBook
+            p website: http://erinpagemd.github.io/little-black-book
+            p repo: https://github.com/erinpagemd/little-black-book
+            p stack: javascript, jquery, firebase, json, html, css, foundation, mocha, chai, unit-testing
+            p description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Foundation for minimal styling. First crack at logins and user flows. Light test suite with mocha and chai.
+
+    #form-div.row
+      p contact form
+    #footer.row
+      .navbar.navbar-inverse
+        .container
+          ul.nav.navbar-nav
+            li: a: i.fa.fa-home &nbsp; Home
+            li: a: i.fa.fa-user &nbsp; Contact
+            li: a: i.fa.fa-briefcase &nbsp; Experience
+            li: a: i.fa.fa-sign-out &nbsp; Portfolio
+            li: a: i.fa.fa-sign-out &nbsp; Blog
+      
+    
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
     script(src='vendor/lodash/lodash.js')
