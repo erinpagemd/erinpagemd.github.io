@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/node/bin/node',
+1 verbose cli   '/usr/local/node/bin/npm',
+1 verbose cli   'update',
+1 verbose cli   '-g',
+1 verbose cli   'bower',
+1 verbose cli   '--save' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly mapToRegistry name bower
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/bower
+8 verbose request uri https://registry.npmjs.org/bower
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 6:18:42 PM
+11 verbose request id 9e50c182abec8e30
+12 verbose etag "91PMAYPB09VCACCOUUW9J1OE2"
+13 http request GET https://registry.npmjs.org/bower
+14 http 304 https://registry.npmjs.org/bower
+15 silly get cb [ 304,
+15 silly get   { date: 'Wed, 08 Apr 2015 23:18:42 GMT',
+15 silly get     server: 'Apache',
+15 silly get     via: '1.1 varnish',
+15 silly get     'last-modified': 'Wed, 08 Apr 2015 23:18:42 GMT',
+15 silly get     'cache-control': 'max-age=60',
+15 silly get     etag: '"91PMAYPB09VCACCOUUW9J1OE2"',
+15 silly get     age: '0',
+15 silly get     'x-served-by': 'cache-dfw1828-DFW',
+15 silly get     'x-cache': 'HIT',
+15 silly get     'x-cache-hits': '1',
+15 silly get     'x-timer': 'S1428535122.696522,VS0,VE189',
+15 silly get     vary: 'Accept',
+15 silly get     'content-length': '0',
+15 silly get     'keep-alive': 'timeout=10, max=50',
+15 silly get     connection: 'Keep-Alive' } ]
+16 verbose etag https://registry.npmjs.org/bower from cache
+17 verbose get saving bower to /Users/erinpage/.npm/registry.npmjs.org/bower/.cache.json
+18 info outdated updating []
+19 verbose stack Error: Failed to parse json
+19 verbose stack Unexpected end of input
+19 verbose stack     at parseError (/usr/local/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:378:25)
+19 verbose stack     at parseJson (/usr/local/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:85:51)
+19 verbose stack     at /usr/local/node/lib/node_modules/npm/node_modules/read-package-json/read-json.js:59:33
+19 verbose stack     at evalmachine.<anonymous>:336:14
+19 verbose stack     at /usr/local/node/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+19 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:99:15)
+20 verbose cwd /Users/erinpage/Desktop/codeness/erinpagemd.github.io
+21 error Darwin 14.1.0
+22 error argv "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "update" "-g" "bower" "--save"
+23 error node v0.12.0
+24 error npm  v2.5.1
+25 error file /usr/local/node/lib/node_modules/bower/node_modules/insight/node_modules/async/package.json
+26 error code EJSONPARSE
+27 error Failed to parse json
+27 error Unexpected end of input
+28 error File: /usr/local/node/lib/node_modules/bower/node_modules/insight/node_modules/async/package.json
+29 error Failed to parse package.json data.
+29 error package.json must be actual JSON, not just JavaScript.
+29 error
+29 error This is not a bug in npm.
+29 error Tell the package author to fix their package.json file. JSON.parse
+30 verbose exit [ 1, true ]
