@@ -4,16 +4,30 @@
 
 #community-div {
   padding-top: 70px;
-  background-color: white;
+  background-image: url('assets/young-coders.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 5% 1%;
+  color: white;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .community-container {
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .logo {
+    margin: 3% 0;
+    padding: 1%;
+  }
 
   .volunteer {
   }
 
   .groups {
-    background-color: gray;
-    color: white;
   }
 
   .hacks {
