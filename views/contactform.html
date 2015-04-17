@@ -1,31 +1,31 @@
 
 <div id="form-div" class="row">
-  <form class="form-horizontal">
+  <form action="https://getsimpleform.com/messages?form_api_token=72f8930ca5f561ce04adf9b271276041" method="post" class="form-horizontal">
     <h1>Contact Form</h1>
     <div class="form-group">
       <label class="col-sm-2 control-label">Name</label>
       <div class="col-sm-10">
-        <input id="name" placeholder="bob smith" type="text" class="form-control">
+        <input id="name" placeholder="bob smith" type="text" name="name" class="form-control">
       </div>
     </div>
     <div class="form-group">
       <label class="col-sm-2 control-label">Email</label>
       <div class="col-sm-10">
-        <input id="email" placeholder="bob@aol.com" type="email" class="form-control">
+        <input id="email" placeholder="bob@aol.com" type="email" name="email" class="form-control">
       </div>
     </div>
     <div class="form-group">
       <label class="col-sm-2 control-label">Phone</label>
       <div class="col-sm-10">
-        <input id="phone" placeholder="867-5309" class="form-control">
+        <input id="phone" placeholder="867-5309" name="phone" class="form-control">
       </div>
     </div>
     <div class="form-group">
       <label class="col-sm-2 control-label">Message</label>
       <div class="col-sm-10">
-        <textarea id="message" placeholder="send me some awesomeness" class="form-control"></textarea>
+        <textarea id="message" placeholder="send me some awesomeness" name="message" class="form-control"></textarea>
       </div>
     </div>
-    <button id="submit-form" class="btn btn-large btn-info">Submit</button>
+    <button id="submit-form" type="submit" value="Test Form" class="btn btn-large btn-info">Submit</button>
   </form>
 </div>

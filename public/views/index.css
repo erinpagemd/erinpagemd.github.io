@@ -4905,23 +4905,36 @@ button.close {
 
 #community-div {
   padding-top: 70px;
-  background-color: white;
+  background-image: url('assets/young-coders.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 5% 1%; }
-  #community-div .groups {
-    background-color: gray;
-    color: white; }
+  padding: 5% 1%;
+  color: white; }
+  #community-div h1 {
+    font-size: 8rem; }
+  #community-div .community-container {
+    background-color: rgba(0, 0, 0, 0.4); }
+  #community-div .logo {
+    margin: 3% 0;
+    padding: 1%; }
 
 #carousel-div {
   padding-top: 80px;
   height: 100%;
   margin: 3% 1%; }
+  #carousel-div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-emphasize-style: bold; }
   #carousel-div img {
     background-size: cover;
     text-align: center;
     width: 100%;
     height: 100%;
     padding: 3% 2%; }
+  #carousel-div .carousel-inner .item {
+    margin: 0 3%; }
 
 #form-div {
   height: 100%;
