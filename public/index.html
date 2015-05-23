@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/Trophy-gold.ico">
     <title>Erin M Page</title>
   </head>
-  <body>
+  <body ng-app="ErinApp">
     <div class="nav-container">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -18,268 +18,17 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#title-div"><i class="fa fa-home">&nbsp; Home</i></a></li>
-              <li><a href="#carousel-div"><i class="fa fa-briefcase">&nbsp; Portfolio</i></a></li>
-              <li><a href="#selfie-div"><i class="fa fa-camera-retro">&nbsp; Selfie</i></a></li>
-              <li><a href="#community-div"><i class="fa fa-beer">&nbsp; Community Activity</i></a></li>
-              <li><a href="#form-div"><i class="fa fa-envelope-o">&nbsp; Contact Me!</i></a></li>
+              <li><a ui-sref="home"><i class="fa fa-home">&nbsp; Home</i></a></li>
+              <li><a ui-sref="profile"><i class="fa fa-briefcase">&nbsp; Portfolio</i></a></li>
+              <li><a ui-sref="selfie"><i class="fa fa-camera-retro">&nbsp; Selfie</i></a></li>
+              <li><a ui-sref="community"><i class="fa fa-beer">&nbsp; Community Activity</i></a></li>
+              <li><a ui-sref="contact"><i class="fa fa-envelope-o">&nbsp; Contact Me!</i></a></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div id="title-div" class="row">
-      <div class="jumbotron">
-        <h1>Erin M Page</h1>
-        <h2>Web Application Engineer</h2>
-        <h3>Nashville, Tennessee</h3>
-      </div>
-    </div>
-    <div id="carousel-div" data-ride="carousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-div" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-div" data-slide-to="1"></li>
-        <li data-target="#carousel-div" data-slide-to="2"></li>
-        <li data-target="#carousel-div" data-slide-to="3"></li>
-        <li data-target="#carousel-div" data-slide-to="4"></li>
-        <li data-target="#carousel-div" data-slide-to="5"></li>
-        <li data-target="#carousel-div" data-slide-to="6"></li>
-        <li data-target="#carousel-div" data-slide-to="7"></li>
-        <li data-target="#carousel-div" data-slide-to="8"></li>
-        <li data-target="#carousel-div" data-slide-to="9"></li>
-      </ol>
-      <div role="listbox" class="carousel-inner">
-        <div class="row item active">
-          <h1>Appchiever</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/appchiever.png" alt="Chismosas Chat App"></div>
-            <div class="col-md-3">
-              <h4>Stack: angularjs, firebase, gulp, jade, bootstrap, git, sass, atom, angularFire, lodash</h4>
-              <h4>Description: App for high school students to collect and store their achievements for college applications. Looped a video on the homepage. OAuth with Google. Login with AngularFire Auth Object. CRUD app using AngularFire arrays and objects. Bootstrap for styling and modals. Routing in anguarjs with Angular UI-Router. </h4>
-              <p>Skill Level: Capstone project for Front-End course at Nashville Software School.</p>
-              <p>Website: <a href="https://appchiever.firebaseapp.com/#/">https://appchiever.firebaseapp.com/#/</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/ng-appchiever">https://github.com/erinpagemd/ng-appchiever    </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Chismosas</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/chismosas.png" alt="Chismosas Chat App"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, firebase, json, html, css, bootstrap</h4>
-              <h4>Description: Messaging app with Firebase live reload. Bootstrap for minimal styling.</h4>
-              <p>Skill Level: Chat App assignment during NSS Front-End Course</p>
-              <p>Website: <a href="http://erinpagemd.github.io/chismosas">http://erinpagemd.github.io/chismosas</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/chismosas">https://github.com/erinpagemd/chismosas</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>NerdTree</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/nerdTree.png" alt="Nerdtree Dating App"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, lodash, jquery, firebase, json, html, css, bootstrap</h4>
-              <h4>Description: Basic CRUD app with login. Firebase login, create new account, and logout. Using Firebase requests used for retrieving, posting, deleting, and modifying data. Bootstrap for minimal styling.</h4>
-              <p>Skill Level: Dating app assignment at NSS Front-End Course</p>
-              <p>Website: <a href="http://erinpagemd.github.io/nerd-tree">http://erinpagemd.github.io/nerd-tree</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/nerd-tree">https://github.com/erinpagemd/nerd-tree</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>LittleBlackBook </h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/littleBlackBook.png" alt="LittleBlackBook Address Book App"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, firebase, json, html, css, foundation, mocha, chai, unit-testing</h4>
-              <h4>Description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Foundation for minimal styling. First crack at logins and user flows. Light test suite with mocha and chai.</h4>
-              <p>Skill Level: Address Book assignment during NSS Front-End Course</p>
-              <p>Website: <a href="http://erinpagemd.github.io/little-black-book">http://erinpagemd.github.io/little-black-book</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/little-black-book">https://github.com/erinpagemd/little-black-book</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Battle Sipps</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/battle-sipps.png" alt="Battle Sipps Multi-player Game"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, lodash, firebase, json, html, css, bootstrap</h4>
-              <h4>Description: 2-player battlehip game using a game object that communicates back and forth with firebase. Play on 2 computers. Paired programming exercise with Brandon Howard, Molly Black, and Dotun Olusoga for Front End Dev session.z</h4>
-              <p>Skill Level: Group Assignment for multiplayer game during NSS Front-End Course</p>
-              <p>Website: <a href="https://battlesipps.firebaseapp.com/">https://battlesipps.firebaseapp.com/</a></p>
-              <p>Repo: <a href="https://github.com/brayhoward/battle-ship">https://github.com/erinpagemd/little-black-book</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Game Won</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/game-won.png" alt="Tic Tac Toe Multi-player Game"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, firebase, json, html, css, bootstrap</h4>
-              <h4>Description: Tic-Tac-Toe game using a game object that communicates back and forth with firebase. Paired programming exercise with Brandon Howard for Front End Dev session. Used ScreenHero for off-site collaboration.</h4>
-              <p>Skill Level: Group Assignment for multiplayer tic-tac-toe game during NSS Front-End Course</p>
-              <p>Website: <a href="https://game-won.firebaseapp.com/">https://game-won.firebaseapp.com/</a></p>
-              <p>Repo: <a href="https://github.com/brayhoward/game1">https://github.com/brayhoward/game1</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Honey Dew</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/honey-dew.png" alt="To-Do App"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, firebase, json, html, css, bootstrap, mocha, karma, chai, unit-testing</h4>
-              <h4>Description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Bootstrap for minimal styling. Build script and more advanced config settings. Test suite with mocha, chai, and karma.</h4>
-              <p>Skill Level: Personal Project during Front-End NSS Course</p>
-              <p>Website: <a href="http://erinpagemd.github.io/to-do/">http://erinpagemd.github.io/to-do/</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/to-do">https://github.com/erinpagemd/to-do</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Stock Market App</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/stock-market.png" alt="Stock Market App"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, lodash, firebase, json, html, css, foundation</h4>
-              <h4>Description: v1.0.0 takes the user inputs of stock symbol and quantity, makes a get request to the markitondemand api and updates the dom. Next iteration is saving the portfolio to firebase. Made in NSS class with Allison Higginbotham.</h4>
-              <p>Skill Level: Paired Programming project during Front-End Course of NSS</p>
-              <p>Website: <a href="http://higgintop.github.io/stockMarketApp/">http://higgintop.github.io/stockMarketApp/</a></p>
-              <p>Repo: <a href="https://github.com/higgintop/stockMarketApp">https://github.com/higgintop/stockMarketApp</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Nashville Recycle Centers</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/nash-recycle.png" alt="Nashville Recycle Centers"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, npm, grunt, jquery, lodash, html, jade, css</h4>
-              <h4>Description: Use of the Nashville Open Data Portal. Writing an ajax call and appending to the DOM.</h4>
-              <p>Skill Level: Personal project during the beginning of Front-End NSS course.</p>
-              <p>Website: <a href="http://higgintop.github.io/stockMarketApp/">http://higgintop.github.io/stockMarketApp/</a></p>
-              <p>Repo: </p><a href="https://github.com/erinpagemd/nash-recycle-centers">https://github.com/erinpagemd/nash-recycle-centers</a>
-            </div>
-          </div>
-        </div>
-        <div class="row item">
-          <h1>Push Product</h1>
-          <div class="row">
-            <div class="col-md-9"><img src="assets/push-product.png" alt="Push Product"></div>
-            <div class="col-md-3">
-              <h4>Stack: javascript, jquery, html, css, pure</h4>
-              <h4>Description: Pushing items into an empty array in javascript. Use of PureCSS framework, HTML-Form</h4>
-              <p>Skill Level: Personal project before NSS to practice javascript methods.Refactored CSS when learning about CSS Frameworks at Nashville Software School.</p>
-              <p>Website: <a href="http://erinpagemd.github.io/PushProduct/">http://erinpagemd.github.io/PushProduct/</a></p>
-              <p>Repo: <a href="https://github.com/erinpagemd/PushProduct">https://github.com/erinpagemd/PushProduct</a></p>
-            </div>
-          </div>
-        </div>
-      </div><a href="#carousel-div" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-div" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
-    </div>
-    <div id="selfie-div" class="row">
-      <div class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6 selfie-right">
-          <div class="technology-icons">
-            <h1>Technologies I love</h1>
-            <div class="logo"><a href="https://angularjs.org/"><img src="assets/angular-logo.png" alt="AngularJS"></a></div>
-            <div class="logo"><a href="https://www.firebase.com/"><img src="assets/firebase-logo.png" alt="Firebase"></a></div>
-            <div class="logo"><a href="http://gulpjs.com/"><img src="assets/gulp-logo.png" alt="Gulp"></a></div>
-            <div class="logo"><a href="http://jade-lang.com/"><img src="assets/jade-logo.png" alt="Jade"></a></div>
-            <div class="logo"><a href="http://getbootstrap.com/"><img src="assets/bootstrap-logo.png" alt="Bootstrap"></a></div>
-            <div class="logo"><a href="http://sass-lang.com/"><img src="assets/sass-logo.png" alt="Sass"></a></div>
-            <div class="logo"><a href="https://atom.io/"><img src="assets/atom-logo.png" alt="Atom"></a></div>
-            <div class="logo"><a href="https://www.firebase.com/docs/web/libraries/angular/"><img src="assets/afire-logo.png" alt="AngularFire"></a></div>
-            <div class="logo"><a href="http://jquery.com/"><img src="assets/jquery-logo.png" alt="jQuery"></a></div>
-          </div>
-          <div class="social-media-icons">
-            <h1>Where to find me</h1>
-            <div class="logo"><a href="https://github.com/erinpagemd"><img src="assets/github-logo.png" alt="Github"></a></div>
-            <div class="logo"><a href="https://www.linkedin.com/in/erinpagemd"><img src="assets/linkedin-logo.png" alt="LinkedIn"></a></div>
-            <div class="logo"><a href="https://twitter.com/erinmpage"><img src="assets/twitter-logo.png" alt="Twitter"></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="community-div" class="row">
-      <div class="row">
-        <h1>Community Involvement</h1>
-      </div>
-      <div class="row community-container">
-        <div class="col-xs-4 volunteer">
-          <h2>Volunteer</h2>
-          <div class="logo">
-            <p>Barcamp 2013 Volunteer</p><a href="http://www.barcampnashville.org/bcn13/"><img src="assets/barcamp2013-logo.png" alt="Barcamp2013"></a>
-          </div>
-          <div class="logo">
-            <p>Barcamp 2014 Planning Crew</p><a href="http://www.barcampnashville.org/bcn14/"><img src="assets/bcn14-logo.png" alt="Barcamp2014"></a>
-          </div>
-          <div class="logo">
-            <p>Code for Nashville Storyteller</p><a href="http://www.codefornashville.org/"><img src="assets/cfn-logo.jpg" alt="Code for Nashville"></a>
-          </div>
-          <div class="logo">
-            <p>Young Coders Day at WestEnd Middle School </p>
-            <p>Lightening-Talk Speaker 2014 (Background Picture)</p>
-          </div>
-        </div>
-        <div class="col-xs-4 groups">
-          <h2>User Groups</h2>
-          <div class="logo">
-            <p>NashJS</p><a href="http://nashjs.org/"><img src="assets/nashjs-logo.png" alt="NashJS"></a>
-          </div>
-          <div class="logo">
-            <p>PyNash</p><a href="http://pynash.org/"><img src="assets/py-logo.jpeg" alt="PyNash"></a>
-          </div>
-          <div class="logo">
-            <p>Agile Nashville</p><a href="http://agilenashville.com/"><img src="assets/agilenashville-logo.png" alt="AgileNashville"></a>
-          </div>
-        </div>
-        <div class="col-xs-4 hacks">
-          <h2>Hacks</h2>
-          <div class="logo">
-            <p>HackNashville 4, 5, 6</p><a href="http://hacknashville.com/"><img src="assets/hn-logo.png" alt="HackNashville4"></a>
-          </div>
-          <div class="logo">
-            <p>HackForChange 2014</p><a href="http://hackforchange.org/"><img src="assets/ndoch-logo.png" alt="HackForChange2014"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="form-div" class="row">
-      <form action="https://getsimpleform.com/messages?form_api_token=72f8930ca5f561ce04adf9b271276041" method="post" class="form-horizontal">
-        <h1>Contact Form</h1>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-10">
-            <input id="name" placeholder="bob smith" type="text" name="name" class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-10">
-            <input id="email" placeholder="bob@aol.com" type="email" name="email" class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Phone</label>
-          <div class="col-sm-10">
-            <input id="phone" placeholder="867-5309" name="phone" class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Message</label>
-          <div class="col-sm-10">
-            <textarea id="message" placeholder="send me some awesomeness" name="message" class="form-control"></textarea>
-          </div>
-        </div>
-        <button id="submit-form" type="submit" value="Test Form" class="btn btn-large btn-info">Submit</button>
-      </form>
-    </div>
+    <div ui-view></div>
     <div id="footer" class="row">
       <div class="navbar navbar-inverse">
         <div class="container">
@@ -296,7 +45,8 @@
     <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="vendor/lodash/lodash.js"></script>
-    <script src="vendor/firebase/firebase.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

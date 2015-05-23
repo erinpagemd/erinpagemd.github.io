@@ -8,23 +8,16 @@ html
     link(rel='stylesheet' href='index.css' type='text/css')
     link(rel='shortcut icon' type='image/x-icon' href='assets/Trophy-gold.ico')
     title Erin M Page
-  body
+  body(ng-app='ErinApp')
     include ./views/nav
     
-    include ./views/title
-
-    include ./views/carousel
-
-    include ./views/selfie
-    
-    include ./views/community
-
-    include ./views/contactform
-    
+    div(ui-view)
+        
     include ./views/footer
     
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
     script(src='vendor/lodash/lodash.js')
-    script(src='vendor/firebase/firebase.js')
+    script(src='vendor/angular/angular.js')
+    script(src='vendor/angular-ui-router/release/angular-ui-router.js')
     script(src='index.js')
