@@ -4924,7 +4924,17 @@ button.close {
   margin: 3% 2%;
   text-align: center; }
   #carousel-div .project-div {
-    margin: 3% 2%; }
+    margin: 1% 2%;
+    padding-top: 50px; }
+    #carousel-div .project-div img {
+      height: 400px;
+      width: 700px; }
+  #carousel-div .project-div-other {
+    margin: 1% 2%;
+    padding-top: 50px; }
+    #carousel-div .project-div-other img {
+      height: 300px;
+      width: 500px; }
   #carousel-div .img-box {
     display: inline-block;
     height: 200px;
@@ -4934,17 +4944,17 @@ button.close {
     text-align: center;
     font-size: 10rem;
     font-emphasize-style: bold;
-    margin: 3% 0; }
+    margin: 2% 0; }
   #carousel-div h2 {
     text-align: center;
     font-size: 5rem;
-    margin: 3%; }
+    margin: 2%; }
   #carousel-div img {
     background-size: cover;
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 3% 2%; }
+    padding: 2% 2%; }
 
 #form-div {
   height: 100%;

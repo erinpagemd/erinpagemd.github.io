@@ -42,7 +42,24 @@
   text-align: center;
 
   .project-div {
-    margin: 3% 2%;
+    margin: 1% 2%;
+    padding-top: 50px;
+
+    img {
+      height: 400px;
+      width: 700px;
+    }
+
+  }
+
+  .project-div-other {
+    margin: 1% 2%;
+    padding-top: 50px;
+
+    img {
+      height: 300px;
+      width: 500px;
+    }
   }
 
   .img-box {
@@ -50,20 +67,21 @@
     height: 200px;
     width: 400px;
     margin: 2%;
+
   }
 
   h1 {
     text-align: center;
     font-size: 10rem;
     font-emphasize-style: bold;
-    margin: 3% 0;
+    margin: 2% 0;
 
   }
 
   h2 {
     text-align: center;
     font-size: 5rem;
-    margin: 3%;
+    margin: 2%;
   }
 
   img {
@@ -71,7 +89,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 3% 2%;
+    padding: 2% 2%;
   }
 
 }

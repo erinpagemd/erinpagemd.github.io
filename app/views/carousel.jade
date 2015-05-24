@@ -8,22 +8,68 @@
           h3 Human or Robot
           h4 Hack Tennessee 7
           h4 AngularJS, Gulp, Bootstrap, Git, Sass, Etc.  
-      .img-box
-        img(src='assets/appchiever.png' alt='NSS Front End Capstone')
-      .img-box
-        img(src='assets/chismosas.png' alt='Chismosas Chat App')
-      .img-box
-        img(src='assets/nerdTree.png' alt='Nerdtree Dating App')
-      .img-box
-        img(src='assets/littleBlackBook.png' alt='LittleBlackBook Address Book App')
-      .img-box
-        img(src='assets/battle-sipps.png' alt='Battle Sipps Multi-player Game')
-      .img-box
-        img(src='assets/game-won.png' alt='Tic Tac Toe Multi-player Game')
-      .img-box
-        img(src='assets/nash-recycle.png' alt='Nashville Recycle Centers')
-  #hor-div.row
-    .project-div
+      .img-box(ng-mouseover='hovering.appchiever=true' ng-mouseleave='hovering.appchiever=false')
+        img(ng-hide='hovering.appchiever' src='assets/appchiever.png' alt='NSS Front End Capstone')
+        a.hovering-info(ng-show='hovering.appchiever' ng-click='gotoAppchiever()')
+          h3 Appchiever
+          h4 NSS Front End Capstone
+          h4 AngularJS, Gulp, Bootstrap, Git, Sass, Firebase, etc.
+      .img-box(ng-mouseover='hovering.chismosas=true' ng-mouseleave='hovering.chismosas=false')
+        img(ng-hide='hovering.chismosas' src='assets/chismosas.png' alt='Chismosas Chat App')
+        a.hovering-info(ng-show='hovering.chismosas' ng-click='gotoChismosas()')
+          h3 Chismosas
+          h4 Chat App
+          h4 Firebase, Bootstrap, jQuery, etc.
+      .img-box(ng-mouseover='hovering.nerd=true' ng-mouseleave='hovering.nerd=false')
+        img(ng-hide='hovering.nerd' src='assets/nerdTree.png' alt='Nerdtree Dating App')
+        a.hovering-info(ng-show='hovering.nerd' ng-click='gotoNerd()')
+          h3 NerdTree
+          h4 Dating App
+          h4 Firebase, Bootstrap, Javascript
+      .img-box(ng-mouseover='hovering.recycle=true' ng-mouseleave='hovering.recycle=false')
+        img(ng-hide='hovering.recycle' src='assets/nash-recycle.png' alt='Nashville Recycle Centers')
+        a.hovering-info(ng-show='hovering.recycle' ng-click='gotoRecycle()')
+          h3 Nashville Recycle Centers
+          h4 Opensource Project
+          h4 REST, jQuery, Javascript
+      .img-box(ng-mouseover='hovering.book=true' ng-mouseleave='hovering.book=false')
+        img(ng-hide='hovering.book' src='assets/littleBlackBook.png' alt='LittleBlackBook Address Book App')
+        a.hovering-info(ng-show='hovering.book' ng-click='gotoBook()')
+          h3 Little Black Book
+          h4 Address Book App
+          h4 Firebase, Bootstrap, Javascript
+      .img-box(ng-mouseover='hovering.battle=true' ng-mouseleave='hovering.battle=false')
+        img(ng-hide='hovering.battle' src='assets/battle-sipps.png' alt='Battle Sipps Multi-player Game')
+        a.hovering-info(ng-show='hovering.battle' ng-click='gotoBattle()')
+          h3 Battle Sipps
+          h4 Battle Ship Multiplayer Game
+          h4 Firebase, Bootstrap, Javascript, jQuery
+      .img-box(ng-mouseover='hovering.won=true' ng-mouseleave='hovering.won=false')
+        img(ng-hide='hovering.won' src='assets/game-won.png' alt='Tic Tac Toe Multi-player Game')
+        a.hovering-info(ng-show='hovering.won' ng-click='gotoWon()')
+          h3 Game Won
+          h4 2 Player Tic Tac Toe Game
+          h4 Firebase, Bootstrap, Javascript, jQuery
+      .img-box(ng-mouseover='hovering.honey=true' ng-mouseleave='hovering.honey=false')
+        img(ng-hide='hovering.honey' src='assets/honey-dew.png' alt='To-Do App')
+        a.hovering-info(ng-show='hovering.honey' ng-click='gotoHoney()')
+          h3 Honey Dew
+          h4 To-Do App
+          h4 Bootstrap, Firebase, Unit Testing, Javascript
+      .img-box(ng-mouseover='hovering.stock=true' ng-mouseleave='hovering.stock=false')
+        img(ng-hide='hovering.stock' src='assets/stock-market.png' alt='Stock Market App')
+        a.hovering-info(ng-show='hovering.stock' ng-click='gotoStock()')
+          h3 Stock Market App
+          h4 NSS Front End Project Using Market On Demand api
+          h4 Foundation, REST, JSON, Firebase, Javascript
+      .img-box(ng-mouseover='hovering.push=true' ng-mouseleave='hovering.push=false')
+        img(ng-hide='hovering.push' src='assets/push-product.png' alt='Push Product')
+        a.hovering-info(ng-show='hovering.push' ng-click='gotoPush()')
+          h3 Push Product
+          h4 Exercises in Javascript
+          h4 Pure CSS Framework, Javascript, jQuery
+
+  #hor-div.row.project-div
       h2 Hack Tennessee 7 Project: Human or Robot
       .row
         .video-container
@@ -40,7 +86,7 @@
         .col-md-6
           .project-info
             h4 Description: 
-            p Made over a weekend at Hack Tennessee 7. Team members: John Liu and Dan Burger. Each game is a sample of 5 questions from the database. Player chooses 'human' or 'robot' by clicking on a button. A modal pops open that tells the correct answer and some additional information about the picture. Eventually would like to be saving the choices people make. 
+            p Made over a weekend at Hack Tennessee 7. Team members: John Liu and Dan Burger. Each game is a sample of 5 questions from the factory. Player chooses 'human' or 'robot' by clicking on a button. A modal pops open that tells the correct answer and some additional information about the picture. Eventually would like to be saving the choices people make. 
       .row
         .project-info
           h4 Website: 
@@ -48,7 +94,7 @@
         .project-info
           h4 Repo: 
             a(href='https://github.com/HackTennessee7/HumanOrRobot') https://github.com/HackTennessee7/HumanOrRobot   
-  .row.project-div
+  #appchiever.row.project-div
     h2 Appchiever
     .row
       .img-container
@@ -72,120 +118,201 @@
       .project-info
         h4 Repo: 
           a(href='https://github.com/erinpagemd/ng-appchiever') https://github.com/erinpagemd/ng-appchiever    
-  .row.project-div
+  #chismosas.row.project-div
     h2 Chismosas
     .row
-      .col-md-9
+      .img-container
         img(src='assets/chismosas.png' alt='Chismosas Chat App')
-      .col-md-3
-        h4 Stack: javascript, jquery, firebase, json, html, css, bootstrap
-        h4 Description: Messaging app with Firebase live reload. Bootstrap for minimal styling.
-        p Skill Level: Chat App assignment during NSS Front-End Course
-        p Website: 
+    .row
+      .col-md-6
+        .project-info
+          h4 Stack: 
+          p javascript, jquery, firebase, json, html, css, bootstrap
+        .project-info
+          h4 Skill Level:
+          p Chat App assignment during NSS Front-End Course
+      .col-md-6
+        .project-info
+          h4 Description: 
+          p Messaging app with Firebase live reload. Bootstrap for minimal styling.
+    .row
+      .project-info
+        h4 Website: 
           a(href='http://erinpagemd.github.io/chismosas') http://erinpagemd.github.io/chismosas
-        p Repo: 
+      .project-info
+        h4 Repo: 
           a(href='https://github.com/erinpagemd/chismosas') https://github.com/erinpagemd/chismosas
-  .row.project-div
+  #nerd.row.project-div
     h2 NerdTree
     .row
-      .col-md-9
+      .img-container
         img(src='assets/nerdTree.png' alt='Nerdtree Dating App')
-      .col-md-3
-        h4 Stack: javascript, lodash, jquery, firebase, json, html, css, bootstrap
-        h4 Description: Basic CRUD app with login. Firebase login, create new account, and logout. Using Firebase requests used for retrieving, posting, deleting, and modifying data. Bootstrap for minimal styling.
-        p Skill Level: Dating app assignment at NSS Front-End Course
-        p Website: 
+    .row
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, lodash, jquery, firebase, json, html, css, bootstrap
+        .project-info
+          h4
+          p Skill Level: Dating app assignment at NSS Front-End Course
+      .col-md-6
+        .project-info
+          h4
+          p Description: Basic CRUD app with login. Firebase login, create new account, and logout. Using Firebase requests used for retrieving, posting, deleting, and modifying data. Bootstrap for minimal styling.
+    .row
+      .project-info
+        h4 Website: 
           a(href='http://erinpagemd.github.io/nerd-tree') http://erinpagemd.github.io/nerd-tree
-        p Repo: 
+      .project-info
+        h4 Repo: 
           a(href='https://github.com/erinpagemd/nerd-tree') https://github.com/erinpagemd/nerd-tree
-  .row.project-div
-    h2 LittleBlackBook 
-    .row
-      .col-md-9
-        img(src='assets/littleBlackBook.png' alt='LittleBlackBook Address Book App')
-      .col-md-3
-        h4 Stack: javascript, jquery, firebase, json, html, css, foundation, mocha, chai, unit-testing
-        h4 Description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Foundation for minimal styling. First crack at logins and user flows. Light test suite with mocha and chai.
-        p Skill Level: Address Book assignment during NSS Front-End Course
-        p Website: 
-          a(href='http://erinpagemd.github.io/little-black-book') http://erinpagemd.github.io/little-black-book
-        p Repo: 
-          a(href='https://github.com/erinpagemd/little-black-book') https://github.com/erinpagemd/little-black-book
-  .row.project-div
-    h2 Battle Sipps
-    .row
-      .col-md-9
-        img(src='assets/battle-sipps.png' alt='Battle Sipps Multi-player Game')
-      .col-md-3
-        h4 Stack: javascript, jquery, lodash, firebase, json, html, css, bootstrap
-        h4 Description: 2-player battlehip game using a game object that communicates back and forth with firebase. Play on 2 computers. Paired programming exercise with Brandon Howard, Molly Black, and Dotun Olusoga for Front End Dev session.z
-        p Skill Level: Group Assignment for multiplayer game during NSS Front-End Course
-        p Website: 
-          a(href='https://battlesipps.firebaseapp.com/') https://battlesipps.firebaseapp.com/
-        p Repo: 
-          a(href='https://github.com/brayhoward/battle-ship') https://github.com/erinpagemd/little-black-book
-  .row.project-div
-    h2 Game Won
-    .row
-      .col-md-9
-        img(src='assets/game-won.png' alt='Tic Tac Toe Multi-player Game')
-      .col-md-3
-        h4 Stack: javascript, jquery, firebase, json, html, css, bootstrap
-        h4 Description: Tic-Tac-Toe game using a game object that communicates back and forth with firebase. Paired programming exercise with Brandon Howard for Front End Dev session. Used ScreenHero for off-site collaboration.
-        p Skill Level: Group Assignment for multiplayer tic-tac-toe game during NSS Front-End Course
-        p Website: 
-          a(href='https://game-won.firebaseapp.com/') https://game-won.firebaseapp.com/
-        p Repo: 
-          a(href='https://github.com/brayhoward/game1') https://github.com/brayhoward/game1
-  .row.project-div
-    h2 Honey Dew
-    .row
-      .col-md-9
-        img(src='assets/honey-dew.png' alt='To-Do App')
-      .col-md-3
-        h4 Stack: javascript, jquery, firebase, json, html, css, bootstrap, mocha, karma, chai, unit-testing
-        h4 Description: Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Bootstrap for minimal styling. Build script and more advanced config settings. Test suite with mocha, chai, and karma.
-        p Skill Level: Personal Project during Front-End NSS Course
-        p Website: 
-          a(href='http://erinpagemd.github.io/to-do/') http://erinpagemd.github.io/to-do/
-        p Repo: 
-          a(href='https://github.com/erinpagemd/to-do') https://github.com/erinpagemd/to-do
-  .row.project-div
-    h2 Stock Market App
-    .row
-      .col-md-9
-        img(src='assets/stock-market.png' alt='Stock Market App')
-      .col-md-3
-        h4 Stack: javascript, jquery, lodash, firebase, json, html, css, foundation
-        h4 Description: v1.0.0 takes the user inputs of stock symbol and quantity, makes a get request to the markitondemand api and updates the dom. Next iteration is saving the portfolio to firebase. Made in NSS class with Allison Higginbotham.
-        p Skill Level: Paired Programming project during Front-End Course of NSS
-        p Website: 
-          a(href='http://higgintop.github.io/stockMarketApp/') http://higgintop.github.io/stockMarketApp/
-        p Repo: 
-          a(href='https://github.com/higgintop/stockMarketApp') https://github.com/higgintop/stockMarketApp
-  .row.project-div
+  #recycle.row.project-div
     h2 Nashville Recycle Centers
     .row
-      .col-md-9
+      .img-container
         img(src='assets/nash-recycle.png' alt='Nashville Recycle Centers')
-      .col-md-3
-        h4 Stack: javascript, npm, grunt, jquery, lodash, html, jade, css
-        h4 Description: Use of the Nashville Open Data Portal. Writing an ajax call and appending to the DOM.
-        p Skill Level: Personal project during the beginning of Front-End NSS course.
-        p Website: 
-          a(href='http://higgintop.github.io/stockMarketApp/') http://higgintop.github.io/stockMarketApp/
-        p Repo: 
-        a(href='https://github.com/erinpagemd/nash-recycle-centers') https://github.com/erinpagemd/nash-recycle-centers
-  .row.project-div
+    .row
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, npm, grunt, jquery, lodash, html, jade, css
+        .project-info
+          h4 Skill Level:
+          p Personal project during the beginning of Front-End NSS course.
+      .col-md-6
+        .project-info
+          h4 Description:
+          p Use of the Nashville Open Data Portal. Writing an ajax call and appending to the DOM.
+    .row
+      .project-info
+        h4 Website: 
+          a(href='http://erinpagemd.github.io/nash-recycle-centers/') http://erinpagemd.github.io/nash-recycle-centers/
+      .project-info
+        h4 Repo: 
+          a(href='https://github.com/erinpagemd/nash-recycle-centers') https://github.com/erinpagemd/nash-recycle-centers
+  #book.row.project-div-other
+    h2 Little Black Book 
+    .row
+      .col-md-6
+        img(src='assets/littleBlackBook.png' alt='LittleBlackBook Address Book App')
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, firebase, json, html, css, foundation, mocha, chai, unit-testing
+        .project-info
+          h4 Description:
+          p Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Foundation for minimal styling. First crack at logins and user flows. Light test suite with mocha and chai.
+        .project-info
+          h4 Skill Level:
+          p Address Book assignment during NSS Front-End Course
+        .project-info
+          p Website: 
+            a(href='http://erinpagemd.github.io/little-black-book') http://erinpagemd.github.io/little-black-book
+        .project-info
+          p Repo: 
+            a(href='https://github.com/erinpagemd/little-black-book') https://github.com/erinpagemd/little-black-book
+  #battle.row.project-div-other
+    h2 Battle Sipps
+    .row
+      .col-md-6
+        img(src='assets/battle-sipps.png' alt='Battle Sipps Multi-player Game')
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, lodash, firebase, json, html, css, bootstrap
+        .project-info
+          h4 Description:
+          p 2-player battlehip game using a game object that communicates back and forth with firebase. Play on 2 computers. Paired programming exercise with Brandon Howard, Molly Black, and Dotun Olusoga for Front End Dev session.z
+        .project-info
+          h4 Skill Level:
+          p Group Assignment for multiplayer game during NSS Front-End Course
+        .project-info
+          p Website: 
+            a(href='https://battlesipps.firebaseapp.com/') https://battlesipps.firebaseapp.com/
+        .project-info
+          p Repo: 
+            a(href='https://github.com/brayhoward/battle-ship') https://github.com/erinpagemd/little-black-book
+  #won.row.project-div-other
+    h2 Game Won
+    .row
+      .col-md-6
+        img(src='assets/game-won.png' alt='Tic Tac Toe Multi-player Game')
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, firebase, json, html, css, bootstrap
+        .project-info
+          h4 Description:
+          p Tic-Tac-Toe game using a game object that communicates back and forth with firebase. Paired programming exercise with Brandon Howard for Front End Dev session. Used ScreenHero for off-site collaboration.
+        .project-info
+          h4 Skill Level:
+          p Group Assignment for multiplayer tic-tac-toe game during NSS Front-End Course
+        .project-info
+          p Website: 
+            a(href='https://game-won.firebaseapp.com/') https://game-won.firebaseapp.com/
+        .project-info
+          p Repo: 
+            a(href='https://github.com/brayhoward/game1') https://github.com/brayhoward/game1
+  #honey.row.project-div-other
+    h2 Honey Dew
+    .row
+      .col-md-6
+        img(src='assets/honey-dew.png' alt='To-Do App')
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, firebase, json, html, css, bootstrap, mocha, karma, chai, unit-testing
+        .project-info
+          h4 Description:
+          p Basic CRUD app with login. Firebase login, create new account, and logout. GET, POST, DELETE http requests. Bootstrap for minimal styling. Build script and more advanced config settings. Test suite with mocha, chai, and karma.
+        .project-info
+          h4 Skill Level:
+          p Personal Project during Front-End NSS Course
+        .project-info
+          p Website: 
+            a(href='http://erinpagemd.github.io/to-do/') http://erinpagemd.github.io/to-do/
+        .project-info
+          p Repo: 
+            a(href='https://github.com/erinpagemd/to-do') https://github.com/erinpagemd/to-do
+  #stock.row.project-div-other
+    h2 Stock Market App
+    .row
+      .col-md-6
+        img(src='assets/stock-market.png' alt='Stock Market App')
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, lodash, firebase, json, html, css, foundation
+        .project-info
+          h4 Description:
+          p v1.0.0 takes the user inputs of stock symbol and quantity, makes a get request to the markitondemand api and updates the dom. Next iteration is saving the portfolio to firebase. Made in NSS class with Allison Higginbotham.
+        .project-info
+          h4 Skill Level:
+          p Paired Programming project during Front-End Course of NSS
+        .project-info
+          p Website: 
+            a(href='http://higgintop.github.io/stockMarketApp/') http://higgintop.github.io/stockMarketApp/
+        .project-info
+          p Repo: 
+            a(href='https://github.com/higgintop/stockMarketApp') https://github.com/higgintop/stockMarketApp
+  #push.row.project-div-other
     h2 Push Product
     .row
-      .col-md-9
+      .col-md-6
         img(src='assets/push-product.png' alt='Push Product')
-      .col-md-3
-        h4 Stack: javascript, jquery, html, css, pure
-        h4 Description: Pushing items into an empty array in javascript. Use of PureCSS framework, HTML-Form
-        p Skill Level: Personal project before NSS to practice javascript methods.Refactored CSS when learning about CSS Frameworks at Nashville Software School.
-        p Website: 
-          a(href='http://erinpagemd.github.io/PushProduct/') http://erinpagemd.github.io/PushProduct/
-        p Repo: 
-          a(href='https://github.com/erinpagemd/PushProduct') https://github.com/erinpagemd/PushProduct
+      .col-md-6
+        .project-info
+          h4 Stack:
+          p javascript, jquery, html, css, pure
+        .project-info
+          h4 Description:
+          p Pushing items into an empty array in javascript. Use of PureCSS framework, HTML-Form
+        .project-info
+          h4 Skill Level:
+          p Personal project before NSS to practice javascript methods.Refactored CSS when learning about CSS Frameworks at Nashville Software School.
+        .project-info
+          p Website: 
+            a(href='http://erinpagemd.github.io/PushProduct/') http://erinpagemd.github.io/PushProduct/
+        .project-info
+          p Repo: 
+            a(href='https://github.com/erinpagemd/PushProduct') https://github.com/erinpagemd/PushProduct
