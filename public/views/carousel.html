@@ -3,7 +3,10 @@
   <div class="row">
     <h1>Projects</h1>
     <div class="row">
-      <div class="img-box"><img src="assets/images/hor.png" alt="Hack Tennessee 7 Project"></div>
+      <div ng-mouseover="hovering.hor=true" ng-mouseleave="hovering.hor=false" class="img-box"><img ng-hide="hovering.hor" src="assets/images/hor.png" alt="Hack Tennessee 7 Project"><a ng-show="hovering.hor" ng-click="gotoHor()" class="hovering-info">
+          <h3>Human or Robot</h3>
+          <h4>Hack Tennessee 7</h4>
+          <h4>AngularJS, Gulp, Bootstrap, Git, Sass, Etc.  </h4></a></div>
       <div class="img-box"><img src="assets/appchiever.png" alt="NSS Front End Capstone"></div>
       <div class="img-box"><img src="assets/chismosas.png" alt="Chismosas Chat App"></div>
       <div class="img-box"><img src="assets/nerdTree.png" alt="Nerdtree Dating App"></div>
@@ -13,39 +16,41 @@
       <div class="img-box"><img src="assets/nash-recycle.png" alt="Nashville Recycle Centers"></div>
     </div>
   </div>
-  <div class="row project-div">
-    <h2>Hack Tennessee 7 Project: Human or Robot</h2>
-    <div class="row">
-      <div class="video-container">
-        <video loop poster="" autoplay muted>
-          <source src="assets/videos/hackTN.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="project-info">
-          <h4>Stack: </h4>
-          <p>angularjs, gulp, jade, bootstrap, git, sass, atom, lodash</p>
-        </div>
-        <div class="project-info">
-          <h4>Skill Level: </h4>
-          <p>Intermediate. Responsible for front-end design and development.</p>
+  <div id="hor-div" class="row">
+    <div class="project-div">
+      <h2>Hack Tennessee 7 Project: Human or Robot</h2>
+      <div class="row">
+        <div class="video-container">
+          <video loop poster="" autoplay muted>
+            <source src="assets/videos/hackTN.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="project-info">
-          <h4>Description: </h4>
-          <p>Made over a weekend at Hack Tennessee 7. Team members: John Liu and Dan Burger. Each game is a sample of 5 questions from the database. Player chooses 'human' or 'robot' by clicking on a button. A modal pops open that tells the correct answer and some additional information about the picture. Eventually would like to be saving the choices people make. </p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project-info">
+            <h4>Stack: </h4>
+            <p>angularjs, gulp, jade, bootstrap, git, sass, atom, lodash</p>
+          </div>
+          <div class="project-info">
+            <h4>Skill Level: </h4>
+            <p>Intermediate. Responsible for front-end design and development.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-info">
+            <h4>Description: </h4>
+            <p>Made over a weekend at Hack Tennessee 7. Team members: John Liu and Dan Burger. Each game is a sample of 5 questions from the database. Player chooses 'human' or 'robot' by clicking on a button. A modal pops open that tells the correct answer and some additional information about the picture. Eventually would like to be saving the choices people make. </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="project-info">
-        <h4>Website: <a href="https://hacktennessee7.github.io/HumanOrRobot">https://hacktennessee7.github.io/HumanOrRobot</a></h4>
-      </div>
-      <div class="project-info">
-        <h4>Repo: <a href="https://github.com/HackTennessee7/HumanOrRobot">https://github.com/HackTennessee7/HumanOrRobot   </a></h4>
+      <div class="row">
+        <div class="project-info">
+          <h4>Website: <a href="https://hacktennessee7.github.io/HumanOrRobot">https://hacktennessee7.github.io/HumanOrRobot</a></h4>
+        </div>
+        <div class="project-info">
+          <h4>Repo: <a href="https://github.com/HackTennessee7/HumanOrRobot">https://github.com/HackTennessee7/HumanOrRobot   </a></h4>
+        </div>
       </div>
     </div>
   </div>

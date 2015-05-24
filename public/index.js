@@ -10,7 +10,7 @@ angular
 
   $stateProvider
     .state('home', {url:'/', templateUrl:'views/title.html'})
-    .state('profile', {url:'/profile', templateUrl:'views/carousel.html'})
+    .state('profile', {url:'/profile', templateUrl:'views/carousel.html', controller:'CarouselCtrl'})
     .state('selfie', {url:'/selfie', templateUrl:'views/selfie.html'})
     .state('community', {url:'/community', templateUrl:'views/community.html'})
     .state('contact', {url:'/contact', templateUrl:'views/contactform.html'})
