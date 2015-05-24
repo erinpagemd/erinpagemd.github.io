@@ -4920,21 +4920,31 @@ button.close {
     padding: 1%; }
 
 #carousel-div {
-  padding-top: 80px;
   height: 100%;
-  margin: 3% 1%; }
+  margin: 3% 2%;
+  text-align: center; }
+  #carousel-div .project-div {
+    margin: 3% 2%; }
+  #carousel-div .img-box {
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    margin: 2%; }
   #carousel-div h1 {
     text-align: center;
-    font-size: 4rem;
-    font-emphasize-style: bold; }
+    font-size: 10rem;
+    font-emphasize-style: bold;
+    margin: 3% 0; }
+  #carousel-div h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 3%; }
   #carousel-div img {
     background-size: cover;
     text-align: center;
     width: 100%;
     height: 100%;
     padding: 3% 2%; }
-  #carousel-div .carousel-inner .item {
-    margin: 0 3%; }
 
 #form-div {
   height: 100%;
@@ -4958,8 +4968,7 @@ button.close {
     margin: 2% 12%; }
 
 #selfie-div {
-  padding-top: 80px;
-  margin: 3% 0;
+  padding: 5% 0;
   height: 100%;
   background-image: url("assets/mesf.jpg");
   background-position: center;
@@ -4976,30 +4985,28 @@ button.close {
     display: inline-block;
     margin: 1%; }
 
+#title-div .video-div {
+  margin: 2% 0;
+  text-align: center; }
+#title-div .video-minor {
+  padding: 10% 0; }
+#title-div .major-div {
+  background-image: url('assets/home-office.jpg');
+  background-position: center;
+  background-size: cover; }
 #title-div .btn-lg, #title-div .btn-group-lg > .btn {
   padding: 1% 5%;
   margin: 2%;
   text-align: center; }
 #title-div .minor-div {
   padding: 5%;
-  margin: 2% 0;
-  border: 2px solid red; }
-#title-div .video-container {
-  position: relative;
-  left: 0;
+  margin: 2% 0; }
+#title-div .video-container video {
+  z-index: -1;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  overflow: hidden; }
-  #title-div .video-container video {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 100%; }
-  #title-div .video-container .video-container video.fillWidth {
-    width: 100%; }
+  margin: 3%; }
+#title-div .video-container .video-container video.fillWidth {
+  width: 100%; }
 #title-div .jumbotron {
   text-align: center;
   display: inline-block;
@@ -5017,6 +5024,9 @@ button.close {
     font-size: 10rem; }
   #title-div .jumbotron h2 {
     display: inline-block; }
+
+.navbar {
+  padding: 0.5%; }
 
 body {
   padding-top: 70px;

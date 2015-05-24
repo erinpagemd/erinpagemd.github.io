@@ -37,15 +37,33 @@
 /////////////// carousel div ////////////////
 
 #carousel-div {
-  padding-top: 80px;
   height: 100%;
-  margin: 3% 1%;
+  margin: 3% 2%;
+  text-align: center;
+
+  .project-div {
+    margin: 3% 2%;
+  }
+
+  .img-box {
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    margin: 2%;
+  }
 
   h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 10rem;
     font-emphasize-style: bold;
+    margin: 3% 0;
 
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 3%;
   }
 
   img {
@@ -56,12 +74,6 @@
     padding: 3% 2%;
   }
 
-  .carousel-inner {
-
-    .item {
-      margin: 0 3%;
-    }
-  }
 }
 
 /////////////// form div ////////////////////
@@ -96,8 +108,7 @@
 /////////////// pic div ////////////////////
 
 #selfie-div {
-  padding-top: 80px;
-  margin: 3% 0;
+  padding: 5% 0;
   height: 100%;
   background-image: url("assets/mesf.jpg");
   background-position: center;
@@ -127,6 +138,23 @@
 
 #title-div {
 
+  .video-div {
+    margin: 2% 0;
+    text-align: center;
+  }
+
+  .video-minor {
+    padding: 10% 0;
+
+  }
+
+  .major-div {
+    background-image: url('assets/home-office.jpg');
+    background-position: center;
+    background-size: cover;
+
+  }
+
   .btn-lg {
     padding: 1% 5%;
     margin: 2%;
@@ -136,24 +164,14 @@
   .minor-div {
     padding: 5%;
     margin: 2% 0;
-    border: 2px solid red;
   }
 
   .video-container {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;
 
     video {
-      position: absolute;
       z-index: -1;
       bottom: 0;
-      width: 100%;
+      margin: 3%;
     }
 
     .video-container video.fillWidth {
@@ -183,6 +201,12 @@
       display: inline-block;
     }
   }
+}
+
+//////////// NAVBAR /////////////////
+
+.navbar {
+  padding: 0.5%;
 }
 
 //////////// html elements /////////////////
