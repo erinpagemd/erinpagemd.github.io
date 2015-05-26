@@ -4903,7 +4903,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-#community-div {
+#community-div .community-main {
   padding-top: 70px;
   background-image: url('assets/young-coders.jpg');
   background-size: cover;
@@ -4911,13 +4911,15 @@ button.close {
   text-align: center;
   padding: 5% 1%;
   color: white; }
-  #community-div h1 {
-    font-size: 8rem; }
-  #community-div .community-container {
-    background-color: rgba(0, 0, 0, 0.4); }
-  #community-div .logo {
-    margin: 3% 0;
-    padding: 1%; }
+#community-div .community-minor {
+  margin: 2%; }
+#community-div h1 {
+  font-size: 8rem; }
+#community-div .community-container {
+  background-color: rgba(0, 0, 0, 0.4); }
+#community-div .logo {
+  margin: 3% 0;
+  padding: 1%; }
 
 #carousel-div {
   height: 100%;

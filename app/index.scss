@@ -3,13 +3,21 @@
 /////////////// volunteer div ////////////////
 
 #community-div {
-  padding-top: 70px;
-  background-image: url('assets/young-coders.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 5% 1%;
-  color: white;
+
+  .community-main {
+    padding-top: 70px;
+    background-image: url('assets/young-coders.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5% 1%;
+    color: white;
+
+  }
+
+  .community-minor {
+    margin: 2%;
+  }
 
   h1 {
     font-size: 8rem;
