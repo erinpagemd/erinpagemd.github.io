@@ -1,15 +1,17 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
+var connect = require('gulp-connect');
 var copy = require('gulp-copy');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 
-//////////WATCH////////////////////////////////////
-gulp.task('watch', function () {
-  livereload.listen();
-  watch('./app/**/*', function() {
-    gulp.start('build');
+////////// Connect ////////////////////////////////////
+gulp.task('connect', function () {
+  connect.server({
+    root: ['public'],
+    port: 8000,
+    livereload: true
   });
 });
 //////////SASS////////////////////////////////////
@@ -18,7 +20,7 @@ gulp.task('sass', function () {
     .pipe(sass())
     .on('error', console.error.bind(console))
     .pipe(gulp.dest('./public/'))
-    .pipe(livereload());
+    .pipe(connect.reload());
 });
 //////////COPY////////////////////////////////////
 gulp.task('copy', function () {
@@ -31,9 +33,17 @@ gulp.task('jade', function() {
     .pipe(jade({pretty: true, doctype: 'html'}))
     .on('error', console.error.bind(console))
     .pipe(gulp.dest('./public/'))
-    .pipe(livereload({start: true}));
+    .pipe(connect.reload());
 
 });
+
+////////// Watch ////////////////////////////////////
+gulp.task('watch', ['connect'], function (){
+  gulp.watch('./app/**/*', function() {
+    gulp.start('build');
+  });
+});
+
 //////////DEFAULT////////////////////////////////////
 gulp.task('build', ['copy', 'jade', 'sass']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['connect', 'watch']);
