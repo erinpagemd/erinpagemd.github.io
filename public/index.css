@@ -4925,13 +4925,33 @@ button.close {
     margin: 2%;
     width: 400px;
     height: 500px; }
-  #community-div .hacknash {
-    background-image: url('assets/hn-logo.png');
+  #community-div .hacknash4 {
+    background-image: url('assets/images/hn4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #community-div .hacknash5 {
+    background-image: url('assets/images/hn5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #community-div .hacknash6 {
+    background-image: url('assets/images/hn6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
   #community-div .hacktn {
-    background-image: url('assets/logos/hacktn.png');
+    background-image: url('assets/images/hacktn7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #community-div #ggd {
+    background-image: url('assets/images/ggd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #community-div #robotics {
+    background-image: url('assets/images/keatonwheels.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -4951,12 +4971,12 @@ button.close {
     background-repeat: no-repeat;
     background-position: center; }
   #community-div #bcn13 {
-    background-image: url('assets/barcamp2013-logo.png');
+    background-image: url('assets/images/bcn13.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
   #community-div #ndoch {
-    background-image: url('assets/ndoch-logo.png');
+    background-image: url('assets/images/ndoch2014.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -4991,6 +5011,8 @@ button.close {
   height: 100%;
   margin: 3% 2%;
   text-align: center; }
+  #carousel-div a {
+    cursor: pointer; }
   #carousel-div .project-div {
     margin: 1% 2%;
     padding-top: 50px; }
@@ -5026,8 +5048,7 @@ button.close {
 
 #form-div {
   height: 100%;
-  background-image: url("assets/desk.jpg");
-  background-position: center;
+  background-image: url("assets/images/IMG_1672.jpg");
   background-size: cover;
   text-align: center;
   position: relative; }

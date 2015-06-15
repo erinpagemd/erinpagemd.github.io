@@ -37,8 +37,25 @@
 
   }
 
-  .hacknash {
-    background-image: url('assets/hn-logo.png');
+  .hacknash4 {
+    background-image: url('assets/images/hn4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .hacknash5 {
+    background-image: url('assets/images/hn5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  .hacknash6 {
+    background-image: url('assets/images/hn6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,12 +63,30 @@
   }
 
   .hacktn {
-    background-image: url('assets/logos/hacktn.png');
+    background-image: url('assets/images/hacktn7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
   }
+
+  #ggd {
+    background-image: url('assets/images/ggd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #robotics {
+    background-image: url('assets/images/keatonwheels.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
 
   #agile {
     background-image: url('assets/agilenashville-logo.png');
@@ -81,7 +116,7 @@
 
 
   #bcn13 {
-    background-image: url('assets/barcamp2013-logo.png');
+    background-image: url('assets/images/bcn13.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +125,7 @@
 
 
   #ndoch {
-    background-image: url('assets/ndoch-logo.png');
+    background-image: url('assets/images/ndoch2014.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,6 +182,10 @@
   height: 100%;
   margin: 3% 2%;
   text-align: center;
+
+  a {
+    cursor: pointer;
+  }
 
   .project-div {
     margin: 1% 2%;
@@ -205,8 +244,7 @@
 
 #form-div {
   height: 100%;
-  background-image: url("assets/desk.jpg");
-  background-position: center;
+  background-image: url("assets/images/IMG_1672.jpg");
   background-size: cover;
   text-align: center;
   position: relative;
@@ -228,7 +266,6 @@
     margin: 2% 12%;
   }
 }
-
 
 /////////////// pic div ////////////////////
 
