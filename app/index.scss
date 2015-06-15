@@ -3,42 +3,141 @@
 /////////////// volunteer div ////////////////
 
 #community-div {
+  text-align: center;
+  color: white;
 
-  .community-main {
-    padding-top: 70px;
+  .label-main {
+    padding: 10% 10% 15%;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 7rem;
+  }
+
+
+  .label-div {
+    padding: 5% 10% 5%;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 7rem;
+  }
+
+
+  .image-text {
+    padding: 15% 10%;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 5rem;
+    height: 100%;
+
+  }
+
+  .each {
+    display: inline-block;
+    background-color: darkgrey;
+    margin: 2%;
+    width: 400px;
+    height: 500px;
+
+  }
+
+  .hacknash {
+    background-image: url('assets/hn-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .hacktn {
+    background-image: url('assets/logos/hacktn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  #agile {
+    background-image: url('assets/agilenashville-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #pynash {
+    background-image: url('assets/py-logo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #nashjs {
+    background-image: url('assets/nashjs-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #bcn13 {
+    background-image: url('assets/barcamp2013-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #ndoch {
+    background-image: url('assets/ndoch-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #bcn14 {
+    background-image: url('assets/images/bcn14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+
+  #cfn {
+    background-image: url('assets/cfn-logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  #women {
+    background-image: url('assets/images/women_programmers.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  #young-coders {
     background-image: url('assets/young-coders.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
-    padding: 5% 1%;
-    color: white;
+    background-position: center;
 
   }
 
-  .community-minor {
-    margin: 2%;
-  }
-
-  h1 {
-    font-size: 8rem;
-  }
-
-  .community-container {
-    background-color: rgba(0, 0, 0, .4);
-  }
-
-  .logo {
-    margin: 3% 0;
-    padding: 1%;
-  }
-
-  .volunteer {
-  }
-
-  .groups {
-  }
-
-  .hacks {
+  .community-main {
+    background-image: url('assets/images/IMG_1677.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1 {
+      font-size: 10rem;
+    }
   }
 }
 
