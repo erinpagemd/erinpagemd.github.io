@@ -2,19 +2,41 @@
   .row
     h1 Projects
     
-    .each-project(ng-repeat='project in projects')
-      .container-fluid
-        img(ng-src="{{project.image}}")
-        h2 {{project.name}}
-        h3 {{project.stack}}
-        h4 {{project.brief}}
-        h5 {{project.website}}
-        h5 {{project.repo}}
-        p {{project.description}}
-        p {{project.level}}
+    .projects(ng-repeat='project in projects')
+      .each-project
+        .container-fluid
+          .project-name
+            .row
+              h2 {{project.name}} : {{project.brief}}
+          .project-image
+            .row
+              .col-md-3
+              .col-md-6
+                .image-or-video(ng-show='project.image')
+                  img(ng-src="{{project.image}}")
+                .image-or-video(ng-show='project.video')
+                  video(loop poster='' autoplay muted)
+                    source(ng-src="{{project.video}}" type='video/mp4')
+              .col-md-3
+            .project-stack
+              .row
+                h3 Technologies: {{project.stack}}
+            .project-links
+              .row
+                h4 See the site: 
+                  a(href="{{project.website}}") {{project.website}}
+              .row
+                h4 See the code: 
+                  a(href="{{project.repo}}") {{project.repo}}
+            .project-body
+              .row
+                .col-md-1
+                .col-md-4
+                  h3 Project Milestone:
+                  h4 {{project.level}}
+                .col-md-2
+                .col-md-4
+                  h3 Project Description:
+                  h4 {{project.description}}
+                .col-md-1
     
-
-  //- #hor-div.row.project-div
-  //-     h2 Hack Tennessee 7 Project: Human or Robot
-  //-         video(loop poster='' autoplay muted)
-  //-           source(src='assets/videos/hackTN.mp4' type='video/mp4')

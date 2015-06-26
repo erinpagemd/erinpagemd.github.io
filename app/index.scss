@@ -179,10 +179,42 @@
 /////////////// carousel div ////////////////
 
 #carousel-div {
+  text-align: center;
 
-  a {
-    cursor: pointer;
+  .each-project {
+    background-color: darkgrey;
+    margin: 5% 0;
   }
+
+  .project-body {
+    margin: 2% 0;
+  }
+
+  .project-stack {
+    margin: 2% 0;
+  }
+
+  .project-name {
+    color: white;
+    font-size: 5rem;
+    background-color: black;
+    height: 100%;
+  }
+
+  .project-image {
+    margin: 2% 0;
+    img {
+      width: 100%;
+    }
+    video {
+      width: 100%;
+    }
+
+  }
+
+  // a {
+  //   cursor: pointer;
+  // }
 
 }
 

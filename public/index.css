@@ -5007,8 +5007,26 @@ button.close {
     #community-div .community-main h1 {
       font-size: 10rem; }
 
-#carousel-div a {
-  cursor: pointer; }
+#carousel-div {
+  text-align: center; }
+  #carousel-div .each-project {
+    background-color: darkgrey;
+    margin: 5% 0; }
+  #carousel-div .project-body {
+    margin: 2% 0; }
+  #carousel-div .project-stack {
+    margin: 2% 0; }
+  #carousel-div .project-name {
+    color: white;
+    font-size: 5rem;
+    background-color: black;
+    height: 100%; }
+  #carousel-div .project-image {
+    margin: 2% 0; }
+    #carousel-div .project-image img {
+      width: 100%; }
+    #carousel-div .project-image video {
+      width: 100%; }
 
 #form-div {
   height: 100%;
