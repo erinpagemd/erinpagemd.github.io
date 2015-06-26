@@ -15,6 +15,18 @@ angular
     },
 
     {
+      name: "Cohort 8 Website",
+      stack: "AngularJS, Gulp, Jade, Bootstrap, Git, Sass, Bootstrap Modals",
+      brief: "Class Website for Nashville Software School Graduation",
+      website: "http://cohort8.nashvillesoftwareschool.com",
+      repo: "https://github.com/NSS-Cohort-8/nss-cohort-8.github.io",
+      description: "I was project manager and primary developer for this website. We wanted something that would reflect our class and the experience we had at Nashville Software School. This was made with a template that I use for my Angular, Bootstap apps. Includes a contact form via simple-form, pictures taken by students of the class, professional headshots, color scheme to match Nashville Software School.",
+      level: "This website was made just before we started our final projects for Nashville Software School.",
+      image: "assets/cohort8.png"
+    },
+
+
+    {
       name: "Human or Robot",
       stack: "AngularJS, Gulp, Jade, Bootstrap, Git, Sass, Atom, Gitter, lodash",
       brief: "Hack Tennessee 7",
