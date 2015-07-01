@@ -4913,8 +4913,9 @@ button.close {
   #community-div .image-text {
     padding: 15% 10%;
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 5rem;
-    height: 100%; }
+    font-size: 5rem; }
+  #community-div .standard-height {
+    height: 350px; }
   #community-div .image-div {
     background-size: cover;
     background-repeat: no-repeat;
