@@ -1,0 +1,4 @@
+node_modules/**
+build/**
+tools/build/**
+src/client/js/vendor/**
