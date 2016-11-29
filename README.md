@@ -11,8 +11,12 @@ npm run build
 
 ### Technologies
 React
+
 Compiler: Babel
+
 ES6
 JSX
-Bundler: Webpack
+
+???Bundler: Webpack
+
 Package Manager: npm
