@@ -4,7 +4,7 @@
   "description": "Erin tries react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,8 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
-  "scripts" : {
-    "build": "babel src -d lib"
-  },
   "devDependencies": {
-    "babel-cli": "^6.18.0"
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
   }
 }
