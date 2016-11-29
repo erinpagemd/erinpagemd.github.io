@@ -5,4 +5,14 @@
 ### Commands
 ```
 npm run build
+./node_modules/.bin/babel index.js  
+./node_modules/.bin/babel-node index.js  
 ```
+
+### Technologies
+React
+Compiler: Babel
+ES6
+JSX
+Bundler: Webpack
+Package Manager: npm
