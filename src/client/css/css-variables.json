@@ -1,0 +1,42 @@
+{
+  "bdrs": ".1875em",
+  "gutterx2": "2.5em",
+  "gutter": "1.25em",
+  "gutter2": ".625em",
+  "gutter4": ".3125em",
+  "gutter8": ".15625em",
+  "mobileHitBox": "2.75em",
+  "notifyBorder": ".15em",
+  "fontSize": {
+    "smallest": ".75em",
+    "small": ".875em",
+    "medium": "1em",
+    "large": "1.125em",
+    "largest": "1.25em"
+  },
+  "colors": {
+    "Body": "#222",
+    "AccentGray": "#111",
+    "Primary": "#0071ba",
+    "PrimaryHover": "#0062a1",
+    "Error": "#a62a00",
+    "StrongsNumber": "#008042",
+    "Hover": "rgba(17, 17, 17, 0.05)"
+  },
+  "z": {
+    "Hidden": -1,
+    "Nav": 1000,
+    "Head": 500,
+    "Content": 100,
+    "Progress": 50,
+    "IframeDlgs": 75,
+    "Toolbar": 150,
+    "ToolbarSubMenu": 95
+  },
+  "header": {
+    "Height": "3.125em"
+  },
+  "search": {
+    "bdrs": "1.125em"
+  }
+}

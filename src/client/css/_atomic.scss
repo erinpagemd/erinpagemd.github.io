@@ -1,0 +1,93 @@
+.Bgc\(white\) {
+  background-color: white;
+}
+.Bgc\(\#e7e7e7\) {
+  background-color: #e7e7e7;
+}
+.Bxsh\(headerBoxShadow\) {
+  box-shadow: 0 1px 1px rgba(17, 17, 17, 0.15);
+}
+.D\(f\) {
+  display: flex;
+}
+.Flxg\(1\) {
+  flex-grow: 1;
+}
+.Flxs\(0\) {
+  flex-shrink: 0;
+}
+.Fld\(c\) {
+  flex-direction: column;
+}
+.Fw\(lr\) {
+  font-weight: lighter;
+}
+.Fz\(1\.5em\) {
+  font-size: 1.5em;
+}
+.H\(100\%\) {
+  height: 100%;
+}
+.H\(headerHeight\) {
+  height: 3.125em;
+}
+.Mx\(a\) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Mt\(0\) {
+  margin-top: 0;
+}
+.Mb\(gutter\) {
+  margin-bottom: 1.25em;
+}
+.T\(0\) {
+  top: 0;
+}
+.Start\(0\) {
+  left: 0;
+}
+.Ovx\(h\) {
+  overflow-x: hidden;
+}
+.Ovy\(a\) {
+  overflow-y: auto;
+}
+.Pos\(r\) {
+  position: relative;
+}
+.Pos\(a\) {
+  position: absolute;
+}
+.TranslateX\(smallContent\) {
+  transform: translateX(calc(-100% + 2.5em));
+}
+.Trsdu\(0\.25s\) {
+  transition-duration: 0.25s;
+}
+.Trsp\(a\) {
+  transition-property: all;
+}
+.Trstf\(eio\) {
+  transition-timing-function: ease-in-out;
+}
+.W\(100\%\) {
+  width: 100%;
+}
+.Z\(zContent\) {
+  z-index: 100;
+}
+.Z\(zHead\) {
+  z-index: 500;
+}
+@media(min-width: 45em) {
+  .Flxs\(1\)--sm {
+    flex-shrink: 1;
+  }
+  .Fz\(1\.75em\)--sm {
+    font-size: 1.75em;
+  }
+  .TranslateX\(0\)--sm {
+    transform: translateX(0);
+  }
+}

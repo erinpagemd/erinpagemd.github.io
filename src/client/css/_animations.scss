@@ -1,0 +1,19 @@
+@keyframes navBtnShiftLeft {
+  90% { transform: translateX(-0.5em); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes navBtnShiftRight {
+  90% { transform: translateX(0.5em); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes title-progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes scaleNotification {
+  0% { transform: scale(0); }
+  100% { transform: scale(0.8); }
+}
