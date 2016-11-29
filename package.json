@@ -1,0 +1,28 @@
+{
+  "name": "erinpagemd.github.io",
+  "version": "1.0.0",
+  "description": "Erin tries react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinpagemd/erinpagemd.github.io.git"
+  },
+  "keywords": [
+    "erin",
+    "awesome",
+    "amaze"
+  ],
+  "author": "Erin Page",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinpagemd/erinpagemd.github.io/issues"
+  },
+  "homepage": "https://github.com/erinpagemd/erinpagemd.github.io#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
