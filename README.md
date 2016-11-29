@@ -1,6 +1,7 @@
 1. Start with installing [React](https://facebook.github.io/react/docs/installation.html)
 2. [Babel](https://babeljs.io/docs/setup/#installation) set up instructions so we can use ES6 ad JSX
 3. Update npm `npm update -g`
+4. Started looking at [Brandon's todo app](https://github.com/brayhoward/react_to_do) and bringing in his file structure.
 
 ### Commands
 ```
