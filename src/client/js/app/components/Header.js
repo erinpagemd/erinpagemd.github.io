@@ -12,7 +12,11 @@ export default class Header extends React.Component {
 
     return (
       <header {...attrs.header}>
-        Header {isNotMobile}
+        Home {isNotMobile}
+        Projects
+        Community
+        Speaking
+        Contact
       </header>
     );
   }
