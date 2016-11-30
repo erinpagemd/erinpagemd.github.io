@@ -1,11 +1,12 @@
-# lifeway-spa 
+# erin on react
 
-LifeWay SPA React Boilerplate
+Credit to Kevin Old for use of LifeWay SPA React Boilerplate
 
 # Getting Started
 
 Use [nvm](https://github.com/creationix/nvm) to install and manage Node.js versions.
 The required/recommended version of Node.js can be found in the `.node-version` file.
+`nvm install node`
 
 # Installation
 
