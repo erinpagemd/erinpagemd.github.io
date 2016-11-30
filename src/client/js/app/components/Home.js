@@ -7,7 +7,7 @@ export default class Home extends React.Component {
   render() {
     const attrs = {
       div: {
-        className: acss('Bgc(white)')
+        className: acss('Bgc(grey)')
       },
       h1: {
         className: acss('Fw(lr)', 'Fz(1.5em)', 'Fz(1.75em)--sm', 'Mb(gutter)', 'Mt(0)', 'Mx(a)')
