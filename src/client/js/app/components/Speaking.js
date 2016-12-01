@@ -1,5 +1,6 @@
 import React from 'react';
 import acss from '../utils/acss';
+import EngagementsList from './EngagementsList'
 
 const engagements = [
   {
@@ -17,10 +18,18 @@ const engagements = [
 ]
 
 export default class Speaking extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      engagements
+    };
+  }
   render() {
     return (
       <div>
         <h1>My Speaking Engagements</h1>
+        <EngagementsList engagements={this.state.engagements} />
       </div>
     );
   }
