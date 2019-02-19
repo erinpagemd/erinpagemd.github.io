@@ -5061,3 +5061,7 @@ button.close {
 body {
   padding-top: 70px;
   background-color: #edefed; }
+
+img {
+  height: 25vh;
+}

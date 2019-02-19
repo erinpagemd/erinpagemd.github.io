@@ -4,38 +4,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/Trophy-gold.ico">
     <title>Erin M Page</title>
   </head>
-  <body ng-app="ErinApp">
-    <div class="nav-container">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button data-toggle="collapse" data-target="#navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a ui-sref="home" class="navbar-brand"><i class="fa fa-trophy">&nbsp Erin M Page</i></a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a ui-sref="home"><i class="fa fa-home">&nbsp; Home</i></a></li>
-              <li><a ui-sref="profile"><i class="fa fa-briefcase">&nbsp; Portfolio</i></a></li>
-              <li><a ui-sref="selfie"><i class="fa fa-camera-retro">&nbsp; Selfie</i></a></li>
-              <li><a ui-sref="community"><i class="fa fa-beer">&nbsp; Community Activity</i></a></li>
-              <li><a ui-sref="contact"><i class="fa fa-envelope-o">&nbsp; Contact Me!</i></a></li>
-            </ul>
-          </div>
+  <body>
+    <div class="container">
+      <div class="col-sm-6">
+        <div class="row">
+          <img class="img-circle" src="erin_beachy.jpg">
+          <h1>Erin M Page</h1>
+          <h5>Product Engineer</h5>
+          <ul>
+            <li>
+              <a href="http://github.com/erinpagemd" target="blank">Github</a>
+            </li>
+            <li>
+              <a href="http://linkin.com/in/erinpagemd" target="blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="http://erinpagemd.com/portfolio-site-2015/" target="blank">Portfolio Site 2015</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+        <div class="row">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <a href="http://erinpagemd.com/product-creation-workflow/" target="blank">Product Creation Workflow</a>
+            </li>
+            <li>
+              <a href="#">Payment Systems... coming soon</a>
+            </li>
+            <li>
+              <a href="#">Reports... coming soon</a>
+            </li>
+            <li>
+              <a href="#">e-commerce... coming soon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h2>For Fun</h2>
+          <ul>
+            <li>
+              <a href="http://erinpagemd.com/donna-countdown/" target="blank">Donna's Retirement Countdown</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="form-div" class="row">
+          <form action="https://getsimpleform.com/messages?form_api_token=72f8930ca5f561ce04adf9b271276041" method="post" class="form-horizontal">
+            <h1>Contact Me! </h1>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input id="name" placeholder="bob smith" type="text" name="name" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input id="email" placeholder="bob@aol.com" type="email" name="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Phone</label>
+              <div class="col-sm-10">
+                <input id="phone" placeholder="867-5309" name="phone" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Message</label>
+              <div class="col-sm-10">
+                <textarea id="message" placeholder="send me some awesomeness" name="message" class="form-control"></textarea>
+              </div>
+            </div>
+            <button id="submit-form" type="submit" value="Test Form" class="btn btn-large btn-info">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div ui-view></div>
-    <script src="vendor/jquery/dist/jquery.js"></script>
-    <script src="vendor/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-    <script src="vendor/lodash/lodash.js"></script>
-    <script src="vendor/angular/angular.js"></script>
-    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="models/carousel.js"></script>
-    <script src="views/carousel.js"></script>
   </body>
 </html>
